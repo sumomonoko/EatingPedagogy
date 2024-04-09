@@ -1,14 +1,18 @@
 <div class="container">
   <div class="row">
-    <h1>
-      <strong>食ラボ</strong>へようこそ<i class="fa-solid fa-bowl-food"></i>
-    </h1>
-    <h5>
-      食ラボは<br>
-      食事について研究したり、共有したりできる場所です!!
-    </h5>
-    <p>さっそく使ってみよう!!</p>
-    <%= link_to "新規登録", new_user_session_path, class: 'btn btn-info btn-sm btn-block mb-3 sign_in' %>
-    <%= link_to "ログイン", new_user_registration_path, class: 'btn btn-success btn-sm btn-block sign_up' %>
+    <div class="col">
+      <div class="mx-auto">
+        <h1 class="text-center">
+          <strong>食ラボ</strong>へようこそ<i class="fa-solid fa-bowl-food"></i>
+        </h1>
+        <h5 class="text-center">食ラボは</h5>
+        <h5 class="text-center">食事について研究したり、共有したりできる場所です!!</h5>
+      </div>
+      <div class = "btn-wrapper col-10 mx-auto">
+        <p>さっそく使ってみよう!!</p>
+        <%= link_to "新規登録", new_user_session_path, class: 'btn btn-info btn-sm btn-block mb-3 sign_in' %>
+        <%= link_to "ログイン", new_user_registration_path, class: 'btn btn-success btn-sm btn-block sign_up' %>
+      </div>
+    </div>
   </div>
 </div>
